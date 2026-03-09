@@ -15,6 +15,8 @@ I put in place the CSS variables I need in order to have a consistent design lan
 I implemented CSS reset attributes to get a consistent design on all browsers.
 ### Override:
 I put in place some default reusable classes that I can use to style HTML components directly.
+### HTML:
+I wrote some base HTML and added links to the font and RemixIcon CDN.
 
 ## Issues Encountered
 ### Transitions:
