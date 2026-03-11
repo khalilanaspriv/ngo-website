@@ -40,11 +40,12 @@ In the our story section, I struggled to build a clean timeline layout with card
 ### Photo Gallery Layout:
 On tablet size, the photo gallery had some issues where the images were mispositioned, causing them to show up in a weird kind of way. I added some media queries for that screen size, which solved the issue (the images now get stacked up on top of each other when the screen is smaller than a certain size).
 ### Performance Score on Lighthouse:
-I got 75 performance score after I did a lighthouse report in the browser. After learning about SEO best practices online, I figured that my images make the score drop down because of loading times. I fixed this later on by adding some attributes to the images and font links. After putting in place the fixes and changes, I managed to get as high as 90 in performance.
+I got 75 performance score after I did a lighthouse report in the browser. After learning about SEO best practices online, I figured that my images make the score drop down because of loading times. I fixed this later on by adding some attributes to the images and font links. After putting in place the fixes and changes, I managed to get as high as 99 in performance.
 
 ## Future Fixes & Enhancements
 * [ ] Enhance text contrasts on buttons.
 * [X] Add animations.
+* [X] Enhance performance.
 * [X] Enhance SEO and accessibility.
 * [ ] Add social media feed.
 
