@@ -1211,6 +1211,7 @@ a {
 
 .footer-contact-list {
   list-style: none;
+  font-style: normal;
 }
 
 .footer-contact-list li {

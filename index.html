@@ -3,7 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NGO. | Agir pour demain</title>
+  
+  <title>NGO. | Agir pour demain - Soutien aux Communautés et Développement Durable</title>
+  <meta name="description" content="NGO. est une organisation dédiée au soutien des communautés à travers l'éducation, la santé et le développement durable. Découvrez notre mission et faites un don.">
+  <meta name="keywords" content="ONG, humanitaire, don, développement durable, éducation, santé, impact social, Maroc">
+  <meta name="author" content="NGO.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://votre-site.org/">
+  <meta property="og:title" content="NGO. | Agir pour demain">
+  <meta property="og:description" content="Rejoignez-nous pour créer un changement durable à travers le monde.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://votre-site.org/">
+  <meta property="twitter:title" content="NGO. | Agir pour demain">
+  <meta property="twitter:description" content="Soutenir les communautés, bâtir un futur durable.">
+
+  <link rel="canonical" href="https://votre-site.org/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -12,8 +30,9 @@
 </head>
 <body>
   <header class="header" id="home">
-    <a href="#" class="logo">NGO.</a>
-    <nav class="navbar" id="navbar">
+    <a href="/" class="logo" title="Retour à l'accueil">NGO.</a>
+    
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
       <ul class="navbar-list">
         <li class="navbar-list-item">
           <a href="#" class="navbar-link current" id="home-link">Accueil</a>
@@ -32,18 +51,19 @@
         </li>
       </ul>
     </nav>
+
     <div class="toggles">
-      <button class="theme-toggle" id="theme-toggle">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
         <i class="" id="theme-toggle-icon"></i>
       </button>
-      <button class="hamburger-toggle" id="hamburger-toggle">
+      <button class="hamburger-toggle" id="hamburger-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <i class="ri-menu-4-line"></i>
       </button>
     </div>
   </header>
   
   <main class="main">
-    <section class="hero-section">
+    <article class="hero-section">
       <div class="hero-container">
         <div class="hero-content reveal-hero">
           <span class="hero-subtitle">Changer les choses, concrètement.</span>
@@ -61,31 +81,31 @@
         </div>
         <div class="hero-image-wrapper reveal-hero">
           <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop" 
-               alt="NGO Impact" class="hero-image">
+               alt="Enfants souriants bénéficiant de l'impact humanitaire de l'organisation" class="hero-image" width="1000" height="667">
         </div>
       </div>
-    </section>
+    </article>
 
     <section class="mission-section" id="mission">
       <div class="mission-container">
-        <div class="mission-header reveal">
+        <header class="mission-header reveal">
           <span class="mission-subtitle">Ce qu'on fait</span>
           <h2 class="mission-title">Notre Mission pour le <span class="accent-text">Changement</span></h2>
           <p class="mission-lead">On est convaincus que le développement commence par l'autonomie locale. On mise sur trois piliers pour garantir un impact réel sur le long terme.</p>
-        </div>
+        </header>
         <div class="mission-grid">
           <div class="mission-card reveal reveal-delay-1">
-            <div class="mission-icon"><i class="ri-heart-line"></i></div>
+            <div class="mission-icon" aria-hidden="true"><i class="ri-heart-line"></i></div>
             <h3>Accès à la Santé</h3>
             <p>On livre du matériel médical et des soins pro aux zones rurales qui manquent de tout.</p>
           </div>
           <div class="mission-card reveal reveal-delay-2">
-            <div class="mission-icon"><i class="ri-book-open-line"></i></div>
+            <div class="mission-icon" aria-hidden="true"><i class="ri-book-open-line"></i></div>
             <h3>Éducation de Qualité</h3>
             <p>Construire des écoles et offrir des bourses pour que chaque enfant ait enfin sa chance.</p>
           </div>
           <div class="mission-card reveal reveal-delay-3">
-            <div class="mission-icon"><i class="ri-leaf-line"></i></div>
+            <div class="mission-icon" aria-hidden="true"><i class="ri-leaf-line"></i></div>
             <h3>Développement Durable</h3>
             <p>Installer des systèmes d'eau propre et d'énergie solaire pour protéger l'avenir des prochaines générations.</p>
           </div>
@@ -146,27 +166,27 @@
         </div>
         <div class="impact-grid">
           <div class="impact-card reveal reveal-delay-1">
-            <div class="impact-icon"><i class="ri-user-heart-line"></i></div>
-            <div class="impact-number">1.2M+</div>
-            <div class="impact-label">Vies Touchées</div>
+            <div class="impact-icon" aria-hidden="true"><i class="ri-user-heart-line"></i></div>
+            <p class="impact-number">1.2M+</p>
+            <h3 class="impact-label">Vies Touchées</h3>
             <p>Des personnes qui ont retrouvé espoir grâce à nos programmes depuis 2015.</p>
           </div>
           <div class="impact-card reveal reveal-delay-2">
-            <div class="impact-icon"><i class="ri-community-line"></i></div>
-            <div class="impact-number">450+</div>
-            <div class="impact-label">Communautés Aidées</div>
+            <div class="impact-icon" aria-hidden="true"><i class="ri-community-line"></i></div>
+            <p class="impact-number">450+</p>
+            <h3 class="impact-label">Communautés Aidées</h3>
             <p>Des projets concrets lancés en zones rurales et urbaines dans 20 pays.</p>
           </div>
           <div class="impact-card reveal reveal-delay-3">
-            <div class="impact-icon"><i class="ri-water-flash-line"></i></div>
-            <div class="impact-number">85%</div>
-            <div class="impact-label">Efficacité des Dons</div>
+            <div class="impact-icon" aria-hidden="true"><i class="ri-water-flash-line"></i></div>
+            <p class="impact-number">85%</p>
+            <h3 class="impact-label">Efficacité des Dons</h3>
             <p>Chaque euro donné va directement sur le terrain pour financer nos actions.</p>
           </div>
           <div class="impact-card reveal reveal-delay-4">
-            <div class="impact-icon"><i class="ri-group-line"></i></div>
-            <div class="impact-number">5,000+</div>
-            <div class="impact-label">Bénévoles Mobiles</div>
+            <div class="impact-icon" aria-hidden="true"><i class="ri-group-line"></i></div>
+            <p class="impact-number">5,000+</p>
+            <h3 class="impact-label">Bénévoles Mobiles</h3>
             <p>Des gens formidables qui travaillent sur le terrain pour changer les choses.</p>
           </div>
         </div>
@@ -181,26 +201,26 @@
           <p class="gallery-lead">Un aperçu des sourires, du travail accompli et des visages qui font bouger les lignes chaque jour.</p>
         </div>
         <div class="gallery-grid">
-          <div class="gallery-item large reveal">
-            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Enfants en classe">
-            <div class="gallery-overlay"><span>Éducation</span></div>
-          </div>
-          <div class="gallery-item reveal reveal-delay-1">
-            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=800&auto=format&fit=crop" alt="Réunion communautaire">
-            <div class="gallery-overlay"><span>Projets Locaux</span></div>
-          </div>
-          <div class="gallery-item reveal reveal-delay-2">
-            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=800&auto=format&fit=crop" alt="Bénévole au travail">
-            <div class="gallery-overlay"><span>Bénévolat</span></div>
-          </div>
-          <div class="gallery-item reveal reveal-delay-1">
-            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop" alt="Soutien médical">
-            <div class="gallery-overlay"><span>Santé</span></div>
-          </div>
-          <div class="gallery-item reveal reveal-delay-2">
-            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop" alt="Soutien médical">
-            <div class="gallery-overlay"><span>Santé</span></div>
-          </div>
+          <figure class="gallery-item large reveal">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Salle de classe avec des enfants apprenant">
+            <figcaption class="gallery-overlay"><span>Éducation</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=800&auto=format&fit=crop" alt="Réunion de village pour un projet local">
+            <figcaption class="gallery-overlay"><span>Projets Locaux</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=800&auto=format&fit=crop" alt="Bénévole distribuant de l'aide alimentaire">
+            <figcaption class="gallery-overlay"><span>Bénévolat</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-1">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop" alt="Soutien médical en zone rurale">
+            <figcaption class="gallery-overlay"><span>Santé</span></figcaption>
+          </figure>
+          <figure class="gallery-item reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop" alt="Personnel de santé prodiguant des soins">
+            <figcaption class="gallery-overlay"><span>Santé</span></figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -213,30 +233,33 @@
           <a href="#home" class="logo">NGO.</a>
           <p class="footer-tagline">Bâtir un avenir durable, une communauté à la fois. Rejoignez notre mouvement.</p>
           <div class="footer-social-links">
-            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-            <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="#" aria-label="Suivez-nous sur Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Suivez-nous sur Twitter/X"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="Suivez-nous sur Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="Suivez-nous sur YouTube"><i class="ri-youtube-line"></i></a>
           </div>
         </div>
         <div class="footer-contact-section">
           <h4 class="footer-heading">Nous Contacter</h4>
-          <ul class="footer-contact-list">
-            <li><i class="ri-map-pin-2-line"></i><span>24, Rue Ibn Khatib, Rabat 10010</span></li>
-            <li><i class="ri-phone-line"></i><span>+212 661097168</span></li>
-            <li><i class="ri-mail-line"></i><span>contact@ngo.org</span></li>
-          </ul>
+          <address class="footer-contact-list">
+            <ul>
+              <li><i class="ri-map-pin-2-line" aria-hidden="true"></i> 24, Rue Ibn Khatib, Rabat 10010, Maroc</li>
+              <li><i class="ri-phone-line" aria-hidden="true"></i> <a href="tel:+212661097168">+212 661 097 168</a></li>
+              <li><i class="ri-mail-line" aria-hidden="true"></i> <a href="mailto:contact@ngo.org">contact@ngo.org</a></li>
+            </ul>
+          </address>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="copyright">&copy; 2026 NGO. Tous droits réservés.</p>
-        <div class="footer-legal">
+        <nav class="footer-legal" aria-label="Liens légaux">
           <a href="#">Politique de Confidentialité</a>
           <a href="#">Conditions d'Utilisation</a>
-        </div>
+        </nav>
       </div>
     </div>
   </footer>
+  
   <div class="navbar-overlay" id="navbar-overlay"></div>
   <script src="js/index.js"></script>
 </body>

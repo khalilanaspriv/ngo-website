@@ -25,6 +25,8 @@ I fixed and polished the CSS attributes and made sure to use my variables to get
 I added some JS and CSS to make the navbar link of the current section the user is in to light up in blue to make sure the user knows what section of the website he's in.
 ### Animations:
 I added on scroll and on refresh animations to the website to make it feel more premium and modern. I did this using CSS keyframes and JS to find out when the user is going to scroll.
+### SEO Best Practices:
+I tried to make the website more SEO-friendly by including meta tags, use semantic tags instead of generic divs, and use alt and aria-label attributes for accessibility.
 
 ## Issues Encountered
 ### Transitions:
@@ -41,7 +43,7 @@ On tablet size, the photo gallery had some issues where the images were misposit
 ## Future Fixes & Enhancements
 * [ ] Enhance text contrasts on buttons.
 * [X] Add animations.
-* [ ] Enhance SEO and accessibility.
+* [X] Enhance SEO and accessibility.
 * [ ] Add social media feed.
 
 ## Tech Stack
