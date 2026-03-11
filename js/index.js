@@ -44,15 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         let id = entry.target.getAttribute('id');
-        
-        if (entry.target.classList.contains('hero-section')) {
-          id = 'home';
-        }
+        if (entry.target.classList.contains('hero-section')) id = 'home';
 
         navLinks.forEach(link => {
           link.classList.remove('current');
           const href = link.getAttribute('href');
-          
           if (href === `#${id}` || (href === '#' && id === 'home')) {
             link.classList.add('current');
           }
@@ -62,6 +58,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }, spyOptions);
 
   sections.forEach(section => spyObserver.observe(section));
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
   navMenuToggleEl.addEventListener('click', toggleMenu);
   overlayEl.addEventListener('click', toggleMenu);

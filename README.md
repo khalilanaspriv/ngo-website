@@ -38,7 +38,7 @@ On tablet size, the photo gallery had some issues where the images were misposit
 
 ## Future Fixes & Enhancements
 * [ ] Enhance text contrasts on buttons.
-* [ ] Add animations.
+* [X] Add animations.
 * [ ] Enhance SEO and accessibility.
 * [ ] Add social media feed.
 
