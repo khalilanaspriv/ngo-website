@@ -1279,10 +1279,12 @@ a {
   }
 }
 
+/* ANIMATIONS */
 .reveal {
   opacity: 0;
   --reveal-y: 30px;
   transform: translateY(var(--reveal-y));
+  pointer-events: none;
   transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1), 
               transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform, opacity;
@@ -1292,6 +1294,7 @@ a {
   opacity: 1;
   --reveal-y: 0px;
   transform: translateY(var(--reveal-y));
+  pointer-events: all;
 }
 
 .mission-card:hover, .impact-card:hover {
