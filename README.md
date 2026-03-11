@@ -21,6 +21,8 @@ I wrote some base HTML and added links to the font and RemixIcon CDN.
 I thought about the website structure and overall layout.
 ### Website CSS:
 I fixed and polished the CSS attributes and made sure to use my variables to get a consistent design all over the website.
+### Current Navbar Link:
+I added some JS and CSS to make the navbar link of the current section the user is in to light up in blue to make sure the user knows what section of the website he's in.
 
 ## Issues Encountered
 ### Transitions:
