@@ -31,6 +31,8 @@ I couldn't figure out how to get good contrast on text in buttons.
 I had some issues putting the footer at the very end of the page. I fixed this issue by giving the body the flex property and added flex:1 to the main tag of the HTML, which caused the footer to go all the way down on the page.
 ### Timeline Layout:
 In the our story section, I struggled to build a clean timeline layout with cards and dates. After a long time of debugging and finding the problem with the help of AI, I managed to fix it and get a decent result.
+### Photo Gallery Layout:
+On tablet size, the photo gallery had some issues where the images were mispositioned, causing them to show up in a weird kind of way. I added some media queries for that screen size, which solved the issue (the images now get stacked up on top of each other when the screen is smaller than a certain size).
 
 ## Future Fixes & Enhancements
 * [ ] Enhance text contrasts on buttons.
