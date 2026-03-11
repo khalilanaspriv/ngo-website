@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title></title>
+  <title>NGO. | Agir pour demain</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <a href="#" class="logo">
       NGO.
     </a>
@@ -23,19 +23,19 @@
     <nav class="navbar" id="navbar">
       <ul class="navbar-list">
         <li class="navbar-list-item">
-          <a href="#" class="navbar-link" id="home-link">Home</a>
+          <a href="#" class="navbar-link" id="home-link">Accueil</a>
         </li>
         <li class="navbar-list-item">
-          <a href="#" class="navbar-link" id="mission-link">Our Mission</a>
+          <a href="#mission" class="navbar-link" id="mission-link">Notre Mission</a>
         </li>
         <li class="navbar-list-item">
-          <a href="#" class="navbar-link" id="story-link">Our Story</a>
+          <a href="#story" class="navbar-link" id="story-link">Notre Histoire</a>
         </li>
         <li class="navbar-list-item">
-          <a href="#" class="navbar-link" id="impact-link">Our Impact</a>
+          <a href="#impact" class="navbar-link" id="impact-link">Impact</a>
         </li>
         <li class="navbar-list-item">
-          <a href="#" class="navbar-link" id="gallery-link">Photo Gallery</a>
+          <a href="#gallery" class="navbar-link" id="gallery-link">Galerie</a>
         </li>
       </ul>
     </nav>
@@ -50,6 +50,247 @@
       </button>
     </div>
   </header>
+  
+  <main class="main">
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Changer les choses, concrètement.</span>
+          
+          <h1 class="hero-title">
+            Soutenir les <span class="accent-text">Communautés</span>, 
+            Bâtir un futur <span class="accent-text">Durable</span>.
+          </h1>
+          
+          <p class="hero-description">
+            On se bat pour apporter des ressources, de l'éducation et un vrai soutien là où c'est le plus nécessaire. Rejoignez-nous pour créer un changement qui dure, partout dans le monde.
+          </p>
+          
+          <div class="hero-cta">
+            <a href="#impact" class="btn btn-primary">Faire un don</a>
+            <a href="#mission" class="btn btn-outline">En savoir plus</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop" 
+               alt="NGO Impact" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section" id="mission">
+      <div class="mission-container">
+        <div class="mission-header">
+          <span class="mission-subtitle">Ce qu'on fait</span>
+          <h2 class="mission-title">Notre Mission pour le <span class="accent-text">Changement</span></h2>
+          <p class="mission-lead">On est convaincus que le développement commence par l'autonomie locale. On mise sur trois piliers pour garantir un impact réel sur le long terme.</p>
+        </div>
+
+        <div class="mission-grid">
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="ri-heart-line"></i>
+            </div>
+            <h3>Accès à la Santé</h3>
+            <p>On livre du matériel médical et des soins pro aux zones rurales qui manquent de tout.</p>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="ri-book-open-line"></i>
+            </div>
+            <h3>Éducation de Qualité</h3>
+            <p>Construire des écoles et offrir des bourses pour que chaque enfant ait enfin sa chance.</p>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-icon">
+              <i class="ri-leaf-line"></i>
+            </div>
+            <h3>Développement Durable</h3>
+            <p>Installer des systèmes d'eau propre et d'énergie solaire pour protéger l'avenir des prochaines générations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-container">
+        <div class="story-header">
+          <span class="story-subtitle">Le Parcours</span>
+          <h2 class="story-title">Comment tout a <span class="accent-text">Commencé</span></h2>
+          <p class="story-lead">D'un petit projet de quartier à une initiative mondiale : voici les grandes étapes de notre aventure.</p>
+        </div>
+
+        <div class="story-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2015</span>
+              <h3>La Vision</h3>
+              <p>Notre fondateur a vu le manque d'eau dans les zones rurales et a décidé d'agir en creusant un premier puits.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018</span>
+              <h3>L'Expansion</h3>
+              <p>On a grandi dans trois pays voisins, avec nos premières équipes locales et un vrai siège social.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021</span>
+              <h3>Le Virage Digital</h3>
+              <p>Lancement de notre plateforme éducative, connectant 50 000 étudiants à des outils d'apprentissage à distance.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Aujourd'hui</span>
+              <h3>Impact Global</h3>
+              <p>Présents dans plus de 20 pays avec 5 000 bénévoles qui se donnent à fond chaque jour.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-section" id="impact">
+      <div class="impact-container">
+        <div class="impact-header">
+          <span class="impact-subtitle">Les Chiffres</span>
+          <h2 class="impact-title">Un Impact <span class="accent-text">Mesurable</span></h2>
+          <p class="impact-lead">Les chiffres ne disent pas tout, mais ils montrent l'ampleur des vies transformées à travers le globe.</p>
+        </div>
+
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-icon"><i class="ri-user-heart-line"></i></div>
+            <div class="impact-number">1.2M+</div>
+            <div class="impact-label">Vies Touchées</div>
+            <p>Des personnes qui ont retrouvé espoir grâce à nos programmes depuis 2015.</p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon"><i class="ri-community-line"></i></div>
+            <div class="impact-number">450+</div>
+            <div class="impact-label">Communautés Aidées</div>
+            <p>Des projets concrets lancés en zones rurales et urbaines dans 20 pays.</p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon"><i class="ri-water-flash-line"></i></div>
+            <div class="impact-number">85%</div>
+            <div class="impact-label">Efficacité des Dons</div>
+            <p>Chaque euro donné va directement sur le terrain pour financer nos actions.</p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon"><i class="ri-group-line"></i></div>
+            <div class="impact-number">5,000+</div>
+            <div class="impact-label">Bénévoles Mobiles</div>
+            <p>Des gens formidables qui travaillent sur le terrain pour changer les choses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <span class="gallery-subtitle">En Images</span>
+          <h2 class="gallery-title">L'Impact en <span class="accent-text">Action</span></h2>
+          <p class="gallery-lead">Un aperçu des sourires, du travail accompli et des visages qui font bouger les lignes chaque jour.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" alt="Enfants en classe">
+            <div class="gallery-overlay">
+              <span>Éducation</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=800&auto=format&fit=crop" alt="Réunion communautaire">
+            <div class="gallery-overlay">
+              <span>Projets Locaux</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=800&auto=format&fit=crop" alt="Bénévole au travail">
+            <div class="gallery-overlay">
+              <span>Bénévolat</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop" alt="Soutien médical">
+            <div class="gallery-overlay">
+              <span>Santé</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop" alt="Soutien médical">
+            <div class="gallery-overlay">
+              <span>Santé</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand-section">
+          <a href="#home" class="logo">NGO.</a>
+          <p class="footer-tagline">
+            Bâtir un avenir durable, une communauté à la fois. Rejoignez notre mouvement.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-contact-section">
+          <h4 class="footer-heading">Nous Contacter</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="ri-map-pin-2-line"></i>
+              <span>24, Rue Ibn Khatib, Rabat 10010</span>
+            </li>
+            <li>
+              <i class="ri-phone-line"></i>
+              <span>+212 661097168</span>
+            </li>
+            <li>
+              <i class="ri-mail-line"></i>
+              <span>contact@ngo.org</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 NGO. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Politique de Confidentialité</a>
+          <a href="#">Conditions d'Utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
   
   <div class="navbar-overlay" id="navbar-overlay"></div>
   <script src="js/index.js"></script>
