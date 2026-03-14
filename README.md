@@ -8,27 +8,27 @@ I’m building a high-performance, one-page template designed specifically to ge
 
 ## Thought Process
 ### Project Structure:
-I started by creating the file structure for the project and making sure it stays simple yet efficient and modular.
+I started by creating the file structure for the project and making sure it stays simple yet efficient and modular in order to make it easy to change and add files on the go.
 ### Variables:
 I put in place the CSS variables I need in order to have a consistent design language that looks professional and clean.
 ### Reset:
 I implemented CSS reset attributes to get a consistent design on all browsers.
 ### Override:
-I put in place some default reusable classes that I can use to style HTML components directly.
+I put in place some default reusable classes that I can use to style HTML components directly to speed up the development process and avoid repetitive and time-consuming tasks.
 ### HTML:
 I wrote some base HTML and added links to the font and RemixIcon CDN.
 ### Website Structure:
-I thought about the website structure and overall layout.
+I thought about the website structure and overall layout. I decided to go for a classic multi-section design to keep it simple for the users and also to minimize development time (since it's the simplest way to design a website).
 ### Website CSS:
 I fixed and polished the CSS attributes and made sure to use my variables to get a consistent design all over the website.
 ### Current Navbar Link:
-I added some JS and CSS to make the navbar link of the current section the user is in to light up in blue to make sure the user knows what section of the website he's in.
+I added some JS and CSS to make the navbar link of the current section the user is in to light up in blue to make sure the user knows what section of the website he's in. This is a glow-up for accessibility and user experience.
 ### Animations:
-I added on scroll and on refresh animations to the website to make it feel more premium and modern. I did this using CSS keyframes and JS to find out when the user is going to scroll.
+I added on scroll and on refresh animations to the website to make it feel more premium, modern and less boring. I did this using CSS keyframes and JS to find out when the user is going to scroll.
 ### SEO Best Practices:
-I tried to make the website more SEO-friendly by including meta tags, use semantic tags instead of generic divs, and use alt and aria-label attributes for accessibility. I got 100 SEO on lighthouse report.
+I tried to make the website more SEO-friendly by including meta tags, use semantic tags instead of generic divs, and use alt and aria-label attributes for accessibility. I got 100 SEO on lighthouse report. This is crucial for the website's visbility on search engines.
 ### Multi-Language Support:
-I added a JSON-based translation system that lets the user swap between French, English, and Arabic instantly. I used JS to handle the text injection on the page and added right to left text logic to the CSS to make sure the layout flips and looks good for arabic.
+I added a JSON-based translation system that lets the user swap between French, English, and Arabic instantly. I used JS to handle the text injection on the page and added right to left text logic to the CSS to make sure the layout flips and looks good for arabic. This is important for local moroccan NGOs since english, french and arabic are the main languages used in morocco.
 
 ## Issues Encountered
 ### Transitions:
@@ -45,6 +45,8 @@ On tablet size, the photo gallery had some issues where the images were misposit
 I got 75 performance score after I did a lighthouse report in the browser. After learning about SEO best practices online, I figured that my images make the score drop down because of loading times. I fixed this later on by adding some attributes to the images and font links. After putting in place the fixes and changes, I managed to get as high as 99 in performance.
 ### Animations:
 Currently, the user can hover over a component before the animation plays which makes it come up on the screen before it's supposed to. I still didn't figure out how to fix this, I marked it as an issue to fix for later since it's a minor bug.
+### Multi-Language support:
+I was first going to use a framework to achieve this, but then I figured that this might complicate the website and add uneccessary  loading times, making the website slower and more difficult to manage. Since the website is small anyway, I decided to use a json file with translations and some JS to add multi-language support, ensuring that the websites stays lighting-fast and light.
 
 ## Future Fixes & Enhancements
 * [ ] Enhance text contrasts on buttons.
