@@ -27,6 +27,8 @@ I added some JS and CSS to make the navbar link of the current section the user 
 I added on scroll and on refresh animations to the website to make it feel more premium and modern. I did this using CSS keyframes and JS to find out when the user is going to scroll.
 ### SEO Best Practices:
 I tried to make the website more SEO-friendly by including meta tags, use semantic tags instead of generic divs, and use alt and aria-label attributes for accessibility. I got 100 SEO on lighthouse report.
+### Multi-Language Support:
+I added a JSON-based translation system that lets the user swap between French, English, and Arabic instantly. I used JS to handle the text injection on the page and added right to left text logic to the CSS to make sure the layout flips and looks good for arabic.
 
 ## Issues Encountered
 ### Transitions:
@@ -47,6 +49,7 @@ Currently, the user can hover over a component before the animation plays which 
 ## Future Fixes & Enhancements
 * [ ] Enhance text contrasts on buttons.
 * [X] Add animations.
+* [X] Add multi-language support.
 * [] Fix minor animations issues (Hover, delay).
 * [X] Enhance performance.
 * [X] Enhance SEO and accessibility.

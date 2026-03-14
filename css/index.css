@@ -1321,3 +1321,31 @@ a {
     transform: translateY(0);
   }
 }
+
+/* LANGUAGES */
+.lang-picker {
+  font-size: var(--fontsize-xs);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: rgb(var(--color-primary-text));
+  outline: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+[dir="rtl"] .hero-container {
+  flex-direction: row-reverse;
+  gap: var(--spacing-lg);
+}
+
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-cta {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--spacing-md);
+}

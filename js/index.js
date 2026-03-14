@@ -14,9 +14,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const htmlEl = document.documentElement;
   const navLinks = document.querySelectorAll('.navbar-link');
   const sections = document.querySelectorAll('header[id], section[id], .hero-section');
+  const langSelect = document.querySelector('#lang-select');
 
   const currentTheme = htmlEl.getAttribute('data-theme');
   navThemeToggleIconEl.className = currentTheme === 'light' ? 'ri-moon-line' : 'ri-sun-line';
+
+  async function updateLanguage(lang) {
+    try {
+      const response = await fetch('./translations.json');
+      const translations = await response.json();
+      const data = translations[lang];
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (data[key]) {
+          el.textContent = data[key];
+        }
+      });
+
+      htmlEl.dir = data.dir || 'ltr';
+      htmlEl.lang = lang;
+      localStorage.setItem('preferred-lang', lang);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   const toggleMenu = () => {
     navMenuEl.classList.toggle('active');
@@ -37,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const spyOptions = {
     root: null,
     threshold: 0,
-    rootMargin: "-20% 0px -79% 0px" 
+    rootMargin: "-20% 0px -79% 0px"
   };
 
   const spyObserver = new IntersectionObserver((entries) => {
@@ -72,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
   navMenuToggleEl.addEventListener('click', toggleMenu);
   overlayEl.addEventListener('click', toggleMenu);
   navThemeToggleEl.addEventListener('click', toggleTheme);
+  langSelect.addEventListener('change', (e) => updateLanguage(e.target.value));
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -90,4 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
       navThemeToggleIconEl.className = newTheme === 'light' ? 'ri-moon-line' : 'ri-sun-line';
     }
   });
+
+  const savedLang = localStorage.getItem('preferred-lang') || 'fr';
+  langSelect.value = savedLang;
+  updateLanguage(savedLang);
 });
