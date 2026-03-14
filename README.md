@@ -52,7 +52,7 @@ I was first going to use a framework to achieve this, but then I figured that th
 * [ ] Enhance text contrasts on buttons.
 * [X] Add animations.
 * [X] Add multi-language support.
-* [] Fix minor animations issues (Hover, delay).
+* [ ] Fix minor animations issues (Hover, delay).
 * [X] Enhance performance.
 * [X] Enhance SEO and accessibility.
 * [ ] Add social media feed.
