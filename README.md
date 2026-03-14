@@ -52,7 +52,7 @@ I was first going to use a framework to achieve this, but then I figured that th
 * [ ] Enhance text contrasts on buttons.
 * [X] Add animations.
 * [X] Add multi-language support.
-* [ ] Fix minor animations issues (Hover, delay).
+* [ ] Fix minor animations issues (Hover delay).
 * [X] Enhance performance.
 * [X] Enhance SEO and accessibility.
 * [ ] Add social media feed.
@@ -61,6 +61,28 @@ I was first going to use a framework to achieve this, but then I figured that th
 As mentioned before, I used vanilla HTMl, CSS, JS for this project to keep it lighting-fast, efficient, and SEO-friendly to have good ranking on Google search results (critical for visibility).
 
 ## Project Structure
+The project's file structure is designed to be clean, efficient and multi-purpose. I've made sure to make it as simple to use as possible:
+
+```
+D:.
+│   index.html
+│   LICENSE
+│   README.md
+│   translations.json
+│
+├───assets
+│   ├───icons
+│   │       .gitkeep
+│   │
+│   └───images
+│           .gitkeep
+│
+├───css
+│       index.css
+│
+└───js
+        index.js
+```        
 
 ## AI Use
 I have tried my best to use AI chabots (primarly Gemini) as a learning tool rather than letting it build things for me. It helped me brainstorm ideas, find inspiration, fix annoying bugs, and learn new things such as Git commands, new CSS properties, or even best web dev practices.
