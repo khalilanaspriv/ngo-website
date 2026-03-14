@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const langSelect = document.querySelector('#lang-select');
 
   const currentTheme = htmlEl.getAttribute('data-theme');
-  navThemeToggleIconEl.className = currentTheme === 'light' ? 'ri-moon-line' : 'ri-sun-line';
+  if (navThemeToggleIconEl) {
+    navThemeToggleIconEl.className = currentTheme === 'light' ? 'ri-moon-line' : 'ri-sun-line';
+  }
 
   async function updateLanguage(lang) {
     try {
@@ -27,8 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (data[key]) {
-          el.textContent = data[key];
+        const translation = data[key];
+
+        if (translation) {
+          if (el.tagName === 'IMG') {
+            el.alt = translation;
+          } else if (el.hasAttribute('aria-label')) {
+            el.setAttribute('aria-label', translation);
+            if (el.hasAttribute('title')) el.setAttribute('title', translation);
+          } else {
+            el.textContent = translation;
+          }
         }
       });
 
@@ -36,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       htmlEl.lang = lang;
       localStorage.setItem('preferred-lang', lang);
     } catch (error) {
-      console.error(error);
+      console.error("Translation Error:", error);
     }
   }
 
@@ -89,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  document.querySelectorAll('.reveal, .reveal-hero').forEach(el => revealObserver.observe(el));
 
   navMenuToggleEl.addEventListener('click', toggleMenu);
   overlayEl.addEventListener('click', toggleMenu);
